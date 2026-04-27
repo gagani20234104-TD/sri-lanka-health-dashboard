@@ -145,6 +145,7 @@ if not dff.empty and len(dff) > 2:
 
 # Pie Chart
 st.subheader("Breakdown by Sex")
+st.markdown("This chart shows the average value split between male and female.")
 if not dff.empty:
     pie_df = dff.groupby("sex")["value"].mean().reset_index()
     fig4 = px.pie(pie_df, names="sex", values="value",
