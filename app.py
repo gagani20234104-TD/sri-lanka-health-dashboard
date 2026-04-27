@@ -84,7 +84,8 @@ df = df.dropna(subset=["year", "value", "indicator"])
 df["year"] = df["year"].astype(int)
 
 # Sidebar filters
-st.sidebar.header("Filters")
+st.sidebar.header("Dashboard Filters")
+st.sidebar.markdown("Use the filters below to explore the data.")
 
 indicators = sorted(df["indicator"].unique())
 selected_indicator = st.sidebar.selectbox("Select Health Indicator", indicators)
