@@ -121,6 +121,7 @@ st.markdown("---")
 
 # Line Chart
 st.subheader("Trend Over Time")
+st.markdown("This chart shows how the selected indicator has changed over the selected years.")
 if not dff.empty:
     fig1 = px.line(dff.sort_values("year"), x="year", y="value",
                    color="sex", markers=True, title=selected_indicator)
