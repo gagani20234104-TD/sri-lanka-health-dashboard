@@ -151,7 +151,8 @@ if not dff.empty:
     st.plotly_chart(fig4, use_container_width=True)
 
 # Raw Data Table
-st.subheader("Raw Data")
+st.subheader("Raw Data Table")
+st.markdown("The table below shows the filtered dataset records.")
 st.dataframe(dff.reset_index(drop=True), use_container_width=True)
 
 csv = dff.to_csv(index=False).encode("utf-8")
