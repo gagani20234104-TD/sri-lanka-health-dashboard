@@ -20,12 +20,6 @@ https://sri-lanka-health-dashboard-mnhaj4qdwfdo9w2n8bjln6.streamlit.app/
 - Sidebar filters for indicator selection, year range and sex
 - Raw data table with CSV download option
 
-## How to Run Locally
-
-Install dependencies by running pip install -r requirements.txt
-
-Run the app by running streamlit run app.py
-
 ## Dataset
 
 Source: World Health Organisation via Humanitarian Data Exchange
